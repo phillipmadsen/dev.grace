@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: Grace
+        psr4_prefix: Grace
         src_path: app

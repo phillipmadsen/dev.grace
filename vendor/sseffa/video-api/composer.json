@@ -1,0 +1,24 @@
+{
+    "name": "sseffa/video-api",
+    "description": "Laravel Video Data (youtube/vimeo) API",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Phillip Madsen",
+            "email": "contact@affordableprogrammer.com",
+            "homepage": "http://www.affordableprogrammer.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sseffa\\VideoApi\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

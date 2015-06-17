@@ -1,36 +1,31 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Grace\Http\Controllers;
 
+use Grace\Repositories\Project\ProjectInterface;
+use Grace\Repositories\Slider\SliderInterface;
+use LaravelLocalization;
+
+/**
+ * Class HomeController
+ * @author Phillip Madsen
+ */
 class HomeController extends Controller {
 
-	/*
-	|--------------------------------------------------------------------------
-	| Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| This controller renders your application's "dashboard" for users that
-	| are authenticated. Of course, you are free to change or remove the
-	| controller as you wish. It is just here to get your app started!
-	|
-	*/
+    protected $slider;
+    protected $project;
 
-	/**
-	 * Create a new controller instance.
-	 *
-	 * @return void
-	 */
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
+    public function __construct(SliderInterface $slider, ProjectInterface $project) {
 
-	/**
-	 * Show the application dashboard to the user.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		return view('home');
-	}
+        $this->slider = $slider;
+        $this->project = $project;
+    }
 
+    public function index() {
+
+        $languages=LaravelLocalization::getSupportedLocales();
+
+        $sliders = $this->slider->all();
+        $projects = $this->project->all();
+
+        return view('frontend/layout/dashboard', compact('sliders', 'projects', 'languages'));
+    }
 }

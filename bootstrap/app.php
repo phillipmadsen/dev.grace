@@ -28,18 +28,19 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
-	'App\Http\Kernel'
+	'Grace\Http\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
-	'App\Console\Kernel'
+	'Grace\Console\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Debug\ExceptionHandler',
-	'App\Exceptions\Handler'
+	'Grace\Exceptions\Handler'
 );
+$app->register('Artesaos\SEOTools\Providers\SEOToolsServiceProvider');
 
 /*
 |--------------------------------------------------------------------------
