@@ -1,4 +1,4 @@
-<?php namespace App\Http\Middleware;
+<?php namespace Grace\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
@@ -20,6 +20,8 @@ class Authenticate {
 	 */
 	public function __construct(Guard $auth)
 	{
+
+
 		$this->auth = $auth;
 	}
 
@@ -32,6 +34,8 @@ class Authenticate {
 	 */
 	public function handle($request, Closure $next)
 	{
+
+		die();
 		if ($this->auth->guest())
 		{
 			if ($request->ajax())

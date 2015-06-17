@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace Grace\Commands;
 
 abstract class Command {
 

@@ -1,3 +1,8 @@
-/vendor
 /node_modules
 .env
+.env.example
+.idea
+composer.lock
+Fresh.before.rename.rar
+start.with.pp.dev.grace.rar
+*.rar

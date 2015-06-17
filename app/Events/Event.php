@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace Grace\Events;
 
 abstract class Event {
 
