@@ -1,11 +1,15 @@
 APP_ENV=local
 APP_DEBUG=true
-APP_KEY=SomeRandomString
+APP_KEY=anykeywilldo
+
+#BASE_DIR=grace.dev
+#CACHE_DIR=$BASE_DIR/cache
+#LOG_DIR=$BASE_DIR/logs
 
 DB_HOST=localhost
-DB_DATABASE=dev_grace
-DB_USERNAME=local_dev
-DB_PASSWORD=local_dev2015
+DB_DATABASE=grace
+DB_USERNAME=newuser
+DB_PASSWORD=admin
 
 CACHE_DRIVER=file
 SESSION_DRIVER=file
@@ -16,3 +20,6 @@ MAIL_HOST=mailtrap.io
 MAIL_PORT=2525
 MAIL_USERNAME=null
 MAIL_PASSWORD=null
+
+
+
