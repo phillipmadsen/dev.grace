@@ -7,3 +7,7 @@ Fresh.before.rename.rar
 start.with.pp.dev.grace.rar
 *.rar
 /config/production
+/bootstrap/compiled.php
+.env.*.php
+.env.php
+.env

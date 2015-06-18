@@ -1,4 +1,4 @@
-Fully CMS
+Phillips CMS
 =============
 
 ### Laravel 5 Content Managment System
@@ -7,15 +7,9 @@ Fully CMS
 
 ## not stable!
 
-## Fully CMS Ver. 2.0.0
+## Phillips CMS Ver. 1.0.0
 ##### Change log:
-* The title has been changed to "Fully CMS"
-* More functions
-* Better optimization
-* Laravel 5
-
-<img src="https://raw.githubusercontent.com/sseffa/fullycms/master/screenshots/1.png" width="900" />
-
+ 
 ## Features
 
 * Laravel 5
@@ -60,16 +54,16 @@ Fully CMS
 
 ## Installation
 
-Please check the system requirements before installing sf CMS.
+Please check the system requirements before installing Phillips CMS.
 
 1. You may install by cloning from github, or via composer.
-  * Github: `git clone git@github.com:sseffa/fullycms.git`
-  * Composer: `composer create-project sseffa/fullycms --prefer-dist`
+  * Github: `git clone git@github.com:phillipmadsen/dev.grace.git`
+ 
 2. From a command line open in the folder, run `composer install`.
 3. Enter your database details into `app/config/database.php`.
-4. Run `php artisan app:install` to setup and seed your database.
-5. Default admin, email: admin@admin.com, password: admin
-6. Settings `app/config/fully.php`. (optional)
+4. Run `php artisan phillips:install` to setup and seed your database.
+5. Default admin walkthrough questions, First name, Last name, email, password
+6. Settings `app/config/grace.php`. (optional)
   * Cache enable / disable
   * image folder
   * post per page
@@ -90,9 +84,7 @@ Please check the system requirements before installing sf CMS.
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/sseffa/fullycms/master/screenshots/2.png" width="900" />
-<img src="https://raw.githubusercontent.com/sseffa/fullycms/master/screenshots/3.png" width="900" />
-<img src="https://raw.githubusercontent.com/sseffa/fullycms/master/screenshots/4.png" width="900" />
+comming soon
 
 ### Licence
 
